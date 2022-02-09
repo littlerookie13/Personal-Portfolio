@@ -12,7 +12,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 3000px;
     top: 0;
     right: 0;
     left: 0;
@@ -95,6 +94,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 100vh;
+    z-index: 2;
 }
 
 #projects-folder-div {
@@ -118,10 +118,6 @@ a {
 }
 
 
-#footer {
-    margin-top: 10000px;
-}
-
 .imgs {
     width: 416px;
     height: 400px;
@@ -142,7 +138,90 @@ a {
     border-top: 3px solid rgba(153, 153, 153, 0.657);
 }
 
-#work-together {
+/* WORK */
+#work-together-div-pos {
+    background-color: rgb(211, 211, 211);
+    position: absolute;
     width: 100%;
-    margin-top: 200vh;
+    height: 1000px;
+    margin-top: 100vh;
+    padding-top:  1100px ;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+#work-div-grid {
+    margin-top: 200px;
+    display: grid;
+    width: 800px;
+    grid-template-columns: 160px 160px 160px 160px 160px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-title {
+    margin-left: 155px;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#work-subtitle {
+    margin-left: 155px;
+    grid-column: 1/6;
+    grid-row: 2/3;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    color:rgb(0, 0, 0);   
+}
+
+.style-work {
+    margin-left: 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+}
+
+
+/* FOOTER */
+
+#footer-div {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    margin-top: 100vh;
+    padding-top: 2050px;
+    display: flex;
+}
+
+#title-footer{
+    display: inline;
+    margin-top: 90px;
+    margin-left: 300px;
+    font-size: 30px;
+    color: rgb(105, 105, 105);
+}
+
+#subtitle-footer {
+    display: inline;
+    margin-top: 100px;
+    margin-left: 600px;
+    font-size: 20px;
 }
